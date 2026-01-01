@@ -1,6 +1,8 @@
 # Abrantes checker
 
-Firefox/Chrome extension that listens for Abrantes A/B testing DOM events on the current page and shows when each one fires (with the event payload).
+Firefox/Chrome extension that listens for **[Abrantes](https://osvik.github.io/abrantes/)** A/B testing DOM events on the current page and shows when each one fires (with the event payload).
+
+This extension as built to test experiments developed with Abrantes v1.0+
 
 ## Builds (Firefox + Chrome)
 
@@ -20,13 +22,11 @@ Please note that loading packages may not work. It's recommended to install from
 
 ## Monitored events
 
-From `web-page-events.js`:
-
-- `abrantes:assignVariant`
-- `abrantes:renderVariant`
-- `abrantes:persist`
-- `abrantes:track`
-- `abrantes:formTrack`
+- `abrantes:assignVariant` - A variant was assigned to the user
+- `abrantes:renderVariant` - The variant was rendered in the page
+- `abrantes:persist` - The variant was saved in the user's browser as a cookie, localStorage or sessionStorage
+- `abrantes:track` - The user was tracked in a web analytics software
+- `abrantes:formTrack` - Info about the experiment was added to a form field to be stored in a database like a CRM or marketing suite.
 
 ## Load in Firefox
 
