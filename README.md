@@ -16,6 +16,8 @@ Run `./scripts/package.sh` to generate:
 - `dist/abrantes-checker-firefox.zip`
 - `dist/abrantes-checker-chrome.zip`
 
+Please note that loading packages may not work. It's recommended to install from the build folder as described for Firefox and Chrome (and other browsers using one of this two formats)
+
 ## Monitored events
 
 From `web-page-events.js`:
