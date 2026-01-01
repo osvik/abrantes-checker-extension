@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abrantes checker</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">Abrantes checker</div>
+      <div class="sub" id="pageInfo">Current tab</div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <div class="actions">
+        <button id="clearBtn" type="button">Clear</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="status" class="status"></div>
+      <div id="events" class="events"></div>
+      <div class="history">
+        <div class="historyTitle">History</div>
+        <div id="history" class="historyList"></div>
+      </div>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>

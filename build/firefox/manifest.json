@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Abrantes checker",
+  "version": "0.1.0",
+  "description": "Monitors Abrantes A/B testing events on the current page.",
+  "permissions": ["storage", "tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Abrantes checker",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "abrantes-checker@example.local"
+    }
+  }
+}
