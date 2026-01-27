@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Abrantes checker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Monitors Abrantes A/B testing events on the current page.",
   "permissions": ["storage", "tabs", "<all_urls>"],
   "background": {
