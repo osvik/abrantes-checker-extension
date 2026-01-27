@@ -4,6 +4,7 @@ const EVENT_NAMES = [
   "abrantes:persist",
   "abrantes:track",
   "abrantes:formTrack",
+  "abrantes:log",
 ];
 
 const api = globalThis.browser ?? globalThis.chrome;

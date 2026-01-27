@@ -50,3 +50,12 @@ document.dispatchEvent(new CustomEvent("abrantes:formTrack", {
         element: "#input_for_id_and_variant"
     }
 }));
+
+// Experiment event sent to logging API
+document.dispatchEvent(new CustomEvent("abrantes:log", {
+    detail: {
+        event: "page_view",
+        note: "User viewed the homepage",
+        result: "{ result: 'OK' }"
+    }
+}));

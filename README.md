@@ -27,6 +27,7 @@ Please note that loading packages may not work. It's recommended to install from
 - `abrantes:persist` - The variant was saved in the user's browser as a cookie, localStorage or sessionStorage
 - `abrantes:track` - The user was tracked in a web analytics software
 - `abrantes:formTrack` - Info about the experiment was added to a form field to be stored in a database like a CRM or marketing suite.
+- `abrantes:log` - Info sent to a log API.
 
 ## Load in Firefox
 
